@@ -79,4 +79,19 @@ function Primaria(nivel) { nivel("edu-ini", title_prim, "text-ini", text_prim, i
         leer("hide3", "read3")
     };
 
+function barraScroll () {
+    //referencia al id
+    const $barra = document.getElementById("progress");
+    //desplazamiento vertical de la ventana
+    let vertical = window.scrollY;
+    //Tamaño total del documento
+    let Final = document.body.scrollHeight;
+    //tamanño total
+    let totalScroll = Final- window.innerHeight;
+    let porcentaje = (vertical * 100)/totalScroll;
+    $barra.style.width = `${porcentaje}%`
+
+}
+document.addEventListener('scroll', barraScroll)
+
 
