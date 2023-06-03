@@ -1,3 +1,10 @@
+//Inicio
+const inicio=()=> {
+    document.getElementById()
+}
+
+
+
 //inicial
 var title_ini = document.getElementById("edu-ini").textContent;
 var text_ini = document.getElementById("text-ini").textContent;
