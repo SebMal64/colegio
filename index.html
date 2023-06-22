@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="img/png" href="tagore/logo.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="colegio.css">
+    <link href="colegio.js">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+
+    <title>Colegio Rabindranth Tagore</title>
+</head>
+
+<body>
+
+    <main id="main">
+        <div id="portada">
+        <div id="slider">
+            <div class="tras"><img id="img1" src="tagore/canchita.jpeg"></div>
+            <div class="tras"><img id="img2" src="tagore/grupito.jpeg"></div>
+            <div class="tras"><img id="img3" src="tagore/escena.jpeg"></div>
+            <div class="tras"><img id="img4" src="tagore/grupos.jpeg"></div>
+</div>
+
+            <header>
+
+                <nav id="nav-bar">
+                    <a id="logo" href="#portada">
+                        <img id="img-logo" src="tagore/logo.png" alt="logo">
+                        <p class="logo-text">Colegio <br>Rabindranth Tagore</p>
+                    </a>
+                    <div id="men" onclick="menu()">
+                        <span id="menu-open" class="btn-menu material-symbols-outlined">
+                            menu
+                        </span>
+                        <span id="menu-close" class="btn-menu material-symbols-outlined">
+                            close
+                        </span>
+                    </div>
+                    <ul id="list">
+                        <li><a onclick="remove()" class="word" href="#valores">Nosotros</a></li>
+                        <li><a onclick="remove()" class="word" href="#vision">Valores</a></li>
+                        <li><a onclick="remove()" class="word" href="#levels">Niveles</a></li>
+                        <li><a onclick="remove()" class="word" href="#contacto">Contacto</a></li>
+                        <li><a onclick="remove()" class="redd" target="_blank"
+                                href="https://wa.me/51935480067?text=Hola,%20quiero%20recibir%20informacion%20acerca%20de%20como%20matricularme%20en%20Rabindranth%20Tagore">Matricularme</a>
+                        </li>
+
+                    </ul>
+                </nav>
+                <div id="progress" class="barra">
+                </div>
+
+            </header>
+
+            <div id="port-text" data-aos="fade-left">
+                <p class="min">Bienvenido a</p>
+                <h1 class="title-port">Colegio Rabindranath Tagore</h1>
+                <h4 class="text-h4">En el Colegio Rabindranath Tagore, nos interesamos en formar líderes con valores.
+                </h4>
+            </div>
+        </div>
+    </main>
+    <section id="valores">
+
+        <h1 class="titulo-size val-text">¡Estudia con nosotros!</h1>
+        <div id="cont-valor">
+            <div class="valor" data-aos="fade-right">
+                <div><img class="valor-icon" src="./tagore/indice.jpg"></div>
+                <div class="valor-text">
+                    <h3 class="valor-title">Espacio amplios</h3></br>
+                    <span class="texto-valor">Nuestros espacios amplios, permiten que los alumnos puedan esparcirse, y
+                        realizar
+                        sus actividades psicomotrices con mayor disposición.
+
+                    </span>
+                </div>
+            </div>
+            <div class="valor" data-aos="zoom-in">
+                <div><img class="valor-icon" src="./tagore/mesa.jpeg"></div>
+                <div class="valor-text">
+                    <h3 class="valor-title">Enseñanza personalizada</h3></br>
+                    <span class="texto-valor">Nuestro plan de aprendizaje se adapta a las necesidades, fortalezas,
+                        habilidades e intereses de cada estudiante.</span>
+                </div>
+            </div>
+            <div class="valor" data-aos="fade-left">
+                <div><img class="valor-icon" src="./tagore/canchita.jpeg"></div>
+                <div class="valor-text">
+                    <h3 class="valor-title">Áreas verdes</h3></br>
+                    <span class="texto-valor">Contamos con amplios espacios verdes, para la que los alumnos estén en
+                        mayor contacto con la naturaleza.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="vision">
+        <h2 class="nivel-val titulo-size">Nuestros valores</h2>
+        <div class="row">
+
+            <div class="square" data-aos="fade-right">
+                <h3 class="text-center">Misión</h3>
+                <span class="p-vision">Brindar un servicio educativo de calidad total, promueve permanentemente la
+                    autoevaluación institucional, la implementación de planes de mejoramiento de la calidad educativa
+                    <span id="hide1"> así como ,el aseguramiento de la calidad de su planificación estratégica con miras
+                        a su acreditación institucional.
+
+                    </span><strong><span><button id="read1" onclick="uno(leer)">&nbsp;&nbsp;Leer más...</button></span>
+                    </strong></span>
+            </div>
+            <div class="square" data-aos="fade-up">
+                <h3 class="text-center">Visión</h3>
+                <span class="p-vision">En los próximos cinco años aspiramos a brindar un servicio educativo de calidad
+                    total,
+                    para ello se implementará y ejecutará una política institucional orientada a la
+                    autoevaluación institucional permanente,<span id="hide2"> para de esta manera asegurar la calidad
+                        educativa a través de la implementación de planes de mejoramiento.
+                    </span><strong><span><button id="read2" onclick="dos(leer)">&nbsp;&nbsp;Leer más...</button></span>
+                    </strong></span>
+            </div>
+            <div class="square" data-aos="fade-left">
+                <h3 class="text-center">Principios</h3>
+                <span class="p-vision">a) Ética. Nuestra IE es promotora de los valores de paz, solidaridad, justicia,
+                    libertad, honestidad, tolerancia, responsabilidad, trabajo,
+                    verdad y pleno respeto a las normas de convivencia: que fortalece la conciencia <span
+                        class="p-vision" id="hide3">moral individual y hace posible
+                        una sociedad basada en el ejercicio permanente de la responsabilidad ciudadana.
+                        <br>b) Puntualidad. Nuestra IE, pone gran énfasis en la puntualidad este principio forma las
+                        bases sólidas de
+                        los estudiantes para una vida disciplinada.
+                    </span><strong><span><button id="read3" onclick="tres(leer)">&nbsp;&nbsp;Leer más...</button></span>
+                </span></strong>
+            </div>
+        </div>
+    </section>
+
+    <section id="levels">
+        <div class="level-grid">
+            <h2 class="niveles titulo-size">Niveles de educación</h2>
+            <div class="btn-row">
+                <button id="inicial" type="button" onclick="Inicial(nivel)" class="btn-edu"
+                    name="inicial">Inicial</button>
+                <button id="primaria" onclick="Primaria(nivel)" class="btn-edu" name="primaria">Primaria</button>
+            </div>
+            <div class="cont">
+                <div class="picture" data-aos="fade-right">
+                    <img id="pic-ini" class="pic" src="tagore/ini.jpg" alt="inicial">
+                </div>
+                <div class="item ini" data-aos="fade-left">
+                    <h3 id="edu-ini">Educación inicial</h3>
+                    <p id="text-ini" class="p-text">En este etapa de escolaridad proporcionamos las bases fundamentales
+                        del saber, y se busca potenciar el desarrollo físico, intelectual, social y afectivo del
+                        estudiante, así como desenvolver su rol con la familia y la sociedad. </p>
+
+                    <!--<button type="button" id="btn-down-ini" class="btn">
+                      
+                             <a href="descarga-utile/No_me_hagas_Pensar_Steve_Krug.pdf" type="file" download="Lista-Inicial">
+                                
+                                <span class="btn-icon material-symbols-outlined">
+                            download</span>  Descargar lista de útiles</a>
+                             </button>-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="none" class="levels">
+
+
+
+        <div class="cont">
+            <div class="picture">
+                <img id="pic-prim" class="pic" src="tagore/canchita.jpeg" alt="inicial">
+            </div>
+            <div class="item ini">
+                <h2 id="edu-prim">Educación primaria</h2>
+                <p id="text-prim" class="p-text">En este nivel los estudiantes aprenderán a leer, interpretar, así como
+                    desarrollar habilidades indispensables como calcular, y comprender mejor las dinámicas sociales.
+                    Aprenderán a cuidar, valorar y adaptarse al entorno social, y ser un buen ciudadano con valores, y
+                    deberes como proteger el medio ambiente. </p>
+                <button class="btn">Descargar lista de útiles</button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="biografia">
+        <div class="bio-div">
+            <h2 data-aos="fade-right">¿Quién fue Rabindranth Tagore?</h2>
+            <div class="cont-bio">
+                <img class="img-bio" data-aos="zoom-in-out" alt="Rabindrath Tagore" src="tagore/tagore.jpg">
+                <p class="bio-text" data-aos="fade-right">Rabindranath Tagore fue un poeta y filósofo indio que a
+                    principios del siglo XX, ejerció una gran influencia en la cultura occidental e hindú. Fue
+                    galardonado con el Premio Nobel de Literatura. A partir de entonces su obra se tradujo del bengalí a
+                    otros idiomas.</p>
+            </div>
+        </div>
+    </section>
+
+    <aside id="contacto">
+
+
+        <div class="text-end" data-aos="fade-up">
+            <h3 class="aside-title">Ubicación</h3>
+            <p class="direccion">Dirección: Lurigancho-Chosica, Av.Tulipanes, Carapongo Mz H Lote 4</p>
+            <address>
+                <iframe class="mapa"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d243.90902039964516!2d-76.88198976131054!3d-12.006000100070048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2spe!4v1673148936255!5m2!1ses!2spe"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </address>
+
+        </div>
+
+        <div class="text-end-p" data-aos="fade-up">
+            <div class="p-aside">
+                <h3 class="aside-title">Ruta de página</h3>
+                <span><a href="#portada"><span class="material-symbols-outlined">
+                            home</span> Inicio</a></span><br>
+                <span><a href="#valores">Nosotros</a></span><br>
+                <span><a href="#valores">¡Estudia con nosotros!</a></span><br>
+                <span><a href="#vision">Nuestros Valores</a></span><br>
+                <span><a href="#levels">Niveles de educación</a></span><br>
+                <span><a href="#biografia">¿Quién fue Rabindranath Tagore?</a></span><br>
+
+            </div>
+        </div>
+        <div class="text-end-p" data-aos="fade-up">
+            <div class="p-aside">
+                <h3 class="aside-title">Contacto</h3>
+                <!--<span class="material-symbols-outlined">
+                mail
+                </span><span class="icons">tagore@gmail.com</span><br>-->
+                <a target="_blank"
+                    href="https://wa.me/51935480067?text=Hola,%20quiero%20recibir%20informacion%20acerca%20de%20como%20matricularme%20en%20Rabindranth%20Tagore">
+                    <span class="material-symbols-outlined">
+                        call
+                    </span><span class="icons">977053334</span></a><br>
+                <a href="https://www.facebook.com/profile.php?id=100054550925179" target="_blank">
+                    <span class="icons">Página de Facebook</span></a><br>
+            </div>
+        </div>
+
+    </aside>
+
+    <footer>
+        2023 © Portal educativo. Todos los derechos reservados.
+    </footer>
+
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init(
+        {
+            duration: 1500,
+            once: true,
+        }
+    );
+</script>
+<script src="colegio.js"></script>
+
+</html>
