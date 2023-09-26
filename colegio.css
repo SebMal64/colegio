@@ -5,9 +5,12 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Poppins, Arial, Helvetica, sans-serif;
-  font-size: 1.15rem;
+  font-size: 1.05rem;
 }
+body {
+    overflow-x: hidden;
 
+}
 :root {
   --fondo-color: rgba(228, 227, 239, 0.9);
   --fondo-red: rgb(230, 116, 64);
@@ -163,7 +166,7 @@ a:link, a:visited, a:active {
   display: block;
   background-color: rgba(119, 119, 119, 0.521);
   background-color: rgb(40, 203, 214);
-  height: 10px;
+  height: 6px;
   width: 0%;
   z-index: 100;
 }
@@ -176,15 +179,21 @@ a:link, a:visited, a:active {
 }
 #slider{
     position:absolute;
-    z-index: 0;
     height: 100vh;
+    width: 400vw;
     display: grid;
     animation: 2s move infinite linear;
     grid-template-columns: repeat(4, 100vw);
     grid-template-rows: repeat(4, 1100px);
+    overflow-y: hidden;
     overflow-x: hidden;
     animation: move 33s infinite ease-in-out;
     -webkit-animation: move 33s infinite ease-in-out;
+}
+#img1, #img2, #img3, #img4 {
+  height: 100%;
+  width: 100vw;
+  object-fit: cover;
 }
 @keyframes move {
   0% {
@@ -194,6 +203,7 @@ a:link, a:visited, a:active {
 /*Transicion imagen 2*/
 18% {
   left: 0%;
+  
 }
 25% {
   left: -100vw;
@@ -223,15 +233,9 @@ a:link, a:visited, a:active {
 }
 
 
-.tras {
-    display: flex;
-    width: 100vw;
-    overflow:hidden
-
-}
-
 #portada {
-    width: 400%;
+  
+    width: 400vw;
     max-height: 100vh;
     background-size:cover;
     overflow: hidden;
@@ -279,6 +283,7 @@ a:link, a:visited, a:active {
   line-height: 1.8rem;
 }
 
+
 /*value*/
 #valores {
   width: 100%;
@@ -315,7 +320,7 @@ a:link, a:visited, a:active {
   overflow: hidden;
 }
 .val-text {
-  margin: 30px 0px 10px;
+  margin: 50px 0px 20px;
 }
 .valor-img {
   width: 100%;
@@ -349,16 +354,18 @@ a:link, a:visited, a:active {
 }
 
 /*Valores*/
-
+.curva {
+  background-color: var(--fondo-color);
+}
 /*vision y propuesta pedagogica */
 #vision {
+  top: -1px;
   height: auto;
   justify-content: center;
   align-items: center;
   display: grid;
-  padding: 35px 150px;
-  background-color: rgba(179, 179, 213, 0.493);
-}
+  padding: 35px 200px;
+  background-color: (179, 179, 213, 0.493);}
 
 .nivel-val {
   margin-bottom: 15px;
@@ -580,7 +587,7 @@ a:link, a:visited, a:active {
 #biografia {
   width: 100%;
   height: 100vh;
-  padding: 40px 130px;
+  padding: 40px 200px;
   background: url(tagore/bandera.jpg);
   background-color: rgba(217, 215, 231, 0.927);
   background-blend-mode: overlay;
@@ -644,19 +651,18 @@ aside {
 
 #contacto {
   display: grid;
-  grid-template-columns: 50% 25% 25%;
+  grid-template-columns: 50% 30% 20%;
   grid-template-rows: auto;
   justify-content: center;
   gap: 45px;
-  font-size: 0.3rem;
-
+  font-size: 5rem;
   color: whitesmoke;
-  padding: 40px 130px;
+  padding: 40px 200px;
   background-color: rgba(1, 2, 14, 0.854);
 }
 
 .p-aside {
-  font-size: 1.1rem !important;
+
   line-height: 2.2rem;
 }
 
