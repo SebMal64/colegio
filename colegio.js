@@ -101,4 +101,3 @@ function barraScroll () {
 }
 document.addEventListener('scroll', barraScroll)
 
-

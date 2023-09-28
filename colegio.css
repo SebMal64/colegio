@@ -15,7 +15,9 @@ body {
   --fondo-color: rgba(228, 227, 239, 0.9);
   --fondo-red: rgb(230, 116, 64);
   --turquesa: rgba(43, 158, 190, 0.96);
+  --letra-small: 0.92rem;
   --estadar: 18px;
+  --color-letra: rgb(58, 58, 58);
 }
 
 .titulo-size {
@@ -307,14 +309,16 @@ a:link, a:visited, a:active {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 200px;
-  box-shadow: 0px 0px 6px 0px rgb(54, 53, 53);
+  border-radius: 10px;
+  overflow:hidden;
+  box-shadow: 0px 0px 15px 0px rgb(75, 71, 71);
 }
 
 .valor-icon {
-  background-color: blue;
+  background-color: rgb(66, 66, 78);
   margin: 0px auto;
   position: relative;
-  height: 200px;
+  height: 240px;
   min-width: 100%;
   max-width: 100%;
   overflow: hidden;
@@ -331,39 +335,35 @@ a:link, a:visited, a:active {
 }
 
 .valor-title {
-  font-size: 1.2rem;
-  font-weight: bolder;
-
-  line-height: 1.5rem;
+  font-size: 1.3rem;
+  margin-bottom: 17px;
+  font-weight: bold;
 }
 
 .valor-text {
   display: grid;
-
+  margin-top: 40px;
   height: auto;
-  align-items: center;
-  text-align: center;
-  line-height: 1.2rem;
-  padding: 25px;
+  text-align:left;
+  line-height: 1.35rem;
+  padding: 35px 40px;
   width: 100%;
 }
 
 .texto-valor {
-  font-size: 0.9rem;
-  margin-top: 7px;
+  color: var(--color-letra);
+  font-size: var(--letra-small);
 }
 
 /*Valores*/
-.curva {
-  background-color: var(--fondo-color);
-}
+
+
 /*vision y propuesta pedagogica */
 #vision {
-  top: -1px;
-  height: auto;
   justify-content: center;
   align-items: center;
   display: grid;
+  margin-top: -8px;
   padding: 35px 200px;
   background-color: (179, 179, 213, 0.493);}
 
@@ -403,8 +403,9 @@ a:link, a:visited, a:active {
 #hide2,
 #hide1 {
   font-weight: 300;
-  font-size: 0.9rem;
+  font-size: var(--letra-small);
   line-height: 1.5rem;
+  color: var(--color-letra);
 }
 #hide3,
 #hide2,
@@ -503,6 +504,7 @@ a:link, a:visited, a:active {
   display: flex;
   align-items: center;
   justify-content: center;
+  
   background-color: var(--fondo-color);
   height: 100vh;
 }
@@ -526,6 +528,7 @@ a:link, a:visited, a:active {
   margin-bottom: 2.5rem;
   line-height: 1.8rem;
   font-size: 1.1rem;
+  color: var(--color-letra);
 }
 
 .picture {
@@ -692,15 +695,17 @@ aside {
 }
 
 footer {
-  background-color: rgb(3, 3, 47);
-  border-top: 2px solid rgb(9, 18, 103);
+  background-color: rgba(1, 2, 14, 0.854);
   width: 100%;
-
-  padding: 30px 30px;
+  font-size: var(--letra-small);
+  padding-bottom:30px;
   text-align: center;
   color: white;
 }
+.negrita {
+  font-size: var(--letra-small);
 
+}
 #men {
   display: none;
 }
@@ -909,12 +914,7 @@ footer {
     padding: 5px 10px;
   }
 
-  .p-text {
-    margin-top: 10px;
-    margin-bottom: 0.5rem;
-    line-height: 1.8rem;
-    font-size: 1.1rem;
-  }
+ 
 
   #edu-ini,
   #edu-prim {
