@@ -254,7 +254,7 @@ a:link, a:visited, a:active {
   flex-direction: column;
   overflow: hidden;
   width: 55%;
-  padding: 90px 120px 0px 60px;
+  padding: 90px 80px 0px 140px;
   z-index:70;
   float: right;
 
@@ -359,13 +359,16 @@ a:link, a:visited, a:active {
 
 
 /*vision y propuesta pedagogica */
+.ovalo {
+  background-color: var(--fondo-color);
+}
 #vision {
   justify-content: center;
   align-items: center;
   display: grid;
   margin-top: -8px;
-  padding: 35px 200px;
-  background-color: (179, 179, 213, 0.493);}
+  padding: 65px 200px;
+  background-color: rgba(179, 179, 213, 0.493);} 
 
 .nivel-val {
   margin-bottom: 15px;
@@ -589,8 +592,8 @@ a:link, a:visited, a:active {
 /*Biografia*/
 #biografia {
   width: 100%;
-  height: 100vh;
-  padding: 40px 200px;
+  height: 87vh;
+  padding: 40px 180px;
   background: url(tagore/bandera.jpg);
   background-color: rgba(217, 215, 231, 0.927);
   background-blend-mode: overlay;
@@ -600,34 +603,44 @@ a:link, a:visited, a:active {
 }
 
 .bio-div {
-  display: grid;
-  grid-template-columns: 100%, 100%;
-  gap: 30px;
-  /*
-    position: relative;
-    align-items: center;*/
+  height: 100%;
+  display: flex;
+  grid-template-columns: 60% 40%;
+  align-items: center;
+  gap: 50px;
 }
 
 .cont-bio {
-  display: flex;
-  flex-direction: row-reverse;
   align-items: center;
 }
 
 #biografia h2 {
-  color: auto;
+  font-size: 2.3rem;
+  color: rgb(27, 27, 27);
+  line-height: 7rem;
 }
 
 .bio-text {
   line-height: 2rem;
+  color: var(--color-letra);
+  
+
+}
+.ind1 {
+    text-indent: 2rem;
+    margin-bottom: 1rem;
+
+}
+.ind2 {
+  text-indent: 2rem;
+
 }
 
 .img-bio {
-  height: 60vh;
+  height: 400px;
   padding: 6px;
   border: 2px solid rgb(8, 17, 87);
   transform: rotate(15deg);
-  margin: 30px;
 }
 
 /*Biografia*/
