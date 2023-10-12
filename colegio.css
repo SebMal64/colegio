@@ -233,10 +233,16 @@ a:link, a:visited, a:active {
       left: 0%;
     }
 }
-
-
+#main {
+z-index: 100;
+  display: flex;
+  height: 100%;
+  width: 100vw;
+  overflow: hidden;
+}
 #portada {
-  
+    height: 100vh;
+
     width: 400vw;
     max-height: 100vh;
     background-size:cover;
@@ -245,11 +251,11 @@ a:link, a:visited, a:active {
 
 
 #port-text {
+  height: 97vh;
   position:absolute;
   background-color: rgba(21, 18, 18, 0.604);
   color: rgb(250, 239, 223);
   display: flex;
-  height: 100vh;
   justify-content: center;
   flex-direction: column;
   overflow: hidden;
@@ -614,10 +620,11 @@ a:link, a:visited, a:active {
   align-items: center;
 }
 
-#biografia h2 {
+#bio-title {
   font-size: 2.3rem;
   color: rgb(27, 27, 27);
-  line-height: 7rem;
+  line-height: 3rem;
+  margin-bottom: 2rem;
 }
 
 .bio-text {
@@ -732,7 +739,7 @@ footer {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 1.15rem;
+    font-size: 0.92rem;
   }
   #progress {
     top: 8vh;
@@ -741,19 +748,12 @@ footer {
   }
   #portada {
     width: 100%;
-    height: auto;
     background-blend-mode: overlay;
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
-    animation: cambiar;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    background-size: cover;
   }
-  #slider {
-    height: 100vh;
-  }
+ 
   #logo {
     display: flex;
     max-width: 13rem;
@@ -797,10 +797,9 @@ footer {
   #port-text {
     text-align: center;
     font-weight: 100;
-    height: 100vh;
     overflow:hidden;
     width: 100%;
-    margin: 20px auto 0px;
+    margin: 20px auto ;
     padding: 0 30px;
     background-color: rgba(0, 0, 0, 0.567);
   }
@@ -903,7 +902,6 @@ footer {
 
   /*educacion*/
   #levels {
-    padding: 20px 90px;
     height: 92vh;
   }
 
@@ -931,44 +929,18 @@ footer {
 
   #edu-ini,
   #edu-prim {
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
   }
 
   .cont {
     gap: 15px;
+    background-color: rgb(192, 209, 215);
     margin: 0 auto;
     padding: 0;
     position: relative;
     display: block;
-    width: 85vw;
-    height: auto;
-  }
-
-  .level-grid {
-    gap: 10px;
-    padding: 0px;
-    margin: 0;
-  }
-
-  .btn {
-    padding: 3px 10px;
-    margin: -5px auto 15px;
-    width: 98%;
-    display: block;
-    left: 10%;
-    right: 10%;
-  }
-
-  .btn a {
-    font-weight: 500;
-    font-size: 0.8rem;
-  }
-
-  #btn-down-ini,
-  a .btn-icon,
-  .material-symbols-outlined {
-    font-size: 1rem;
+    width: 75vw;
   }
 
   #edu-ini {
@@ -983,7 +955,7 @@ footer {
   .picture {
     display: block;
     position: relative;
-    margin: 15px auto 20px;
+    margin: 0 auto 20px;
     min-height: 130px;
     max-height: 150px;
     max-width: 290px;
@@ -996,10 +968,8 @@ footer {
   }
 
   .p-text {
-    margin-top: 0.7rem;
-    margin-bottom: 1.2rem;
+    padding: 0px 20px;
     line-height: 1.2rem;
-    font-size: 0.8rem;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -1007,6 +977,7 @@ footer {
 
   /* Este son pra los valores y beneficios*/
   #valores {
+    overflow: hidden;
     height: auto;
     padding: 20px 35px;
   }
@@ -1032,8 +1003,7 @@ footer {
     margin: auto;
     height: auto;
     grid-template-columns: 1fr;
-    gap: 32px;
-
+    gap: 20px;
     padding: 0px;
     align-items: center;
     justify-content: center;
@@ -1050,7 +1020,7 @@ footer {
   }
   /*vision*/
   #vision {
-    padding: 15px;
+    padding: 20px 25px;
   }
 
   .row {
@@ -1072,41 +1042,43 @@ footer {
   .p-vision,
   #hide1,
   #hide2,
-  #hide3 {
+  #hide3, #read1, #read2, #read3 {
     font-size: 0.85rem;
     line-height: 0.1rem;
   }
 
   /*biografiaa*/
   #biografia {
-    height: 100%;
-    padding: 20px;
+    height: auto;
+    padding: 25px;
+  }
+  #bio-title{
+    font-size: 1.4rem;
+    text-align: left;
+    line-height: 2rem;
+    margin-bottom: 0.5rem;
+
   }
 
   .bio-div {
-    display: grid;
-    grid-template-columns: 100%, 100%, 100%;
-    padding: 0;
-    gap: 15px;
+    display: block;
   }
 
   .img-bio {
     height: 240px;
-    width: 66%;
-    margin: 0 18%;
-    padding: 6px;
+    margin:  0 18%;
+    padding: 4px;
     margin-bottom: 0.3rem;
   }
 
   .bio-text {
     padding: 10px;
-    font-size: 0.9rem;
     line-height: 1.5rem;
+    margin-bottom: 1rem;
   }
 
   .cont-bio {
     display: block;
-    grid-template-columns: 100%, 100%;
   }
 
   /*biografia*/
@@ -1133,8 +1105,5 @@ footer {
     line-height: 1.9rem;
   }
 
-  footer {
-    font-size: 0.75rem;
-    padding: 20px 25px;
-  }
+
 }
