@@ -99,5 +99,8 @@ function barraScroll () {
     $barra.style.width = `${porcentaje}%`
 
 }
-document.addEventListener('scroll', barraScroll)
-
+document.addEventListener('scroll', barraScroll);
+ 
+const subir =() => {
+    window.screenY= 5332;
+}

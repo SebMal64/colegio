@@ -681,7 +681,7 @@ aside {
   font-size: 5rem;
   color: whitesmoke;
   padding: 40px 200px;
-  background-color: rgba(1, 2, 14, 0.854);
+  background-color: rgb(37, 101, 104);
 }
 
 .p-aside {
@@ -715,7 +715,7 @@ aside {
 }
 
 footer {
-  background-color: rgba(1, 2, 14, 0.854);
+  background-color: rgb(37, 101, 104);
   width: 100%;
   font-size: var(--letra-small);
   padding-bottom:30px;
@@ -724,6 +724,8 @@ footer {
 }
 .negrita {
   font-size: var(--letra-small);
+  text-decoration: none;
+  font-weight: 300;
 
 }
 #men {
@@ -761,16 +763,13 @@ footer {
   }
 
   #men {
-    display: block;
-    margin-top: 12px;
+    display: flex;
     margin-right: 20px;
-    height: 40%;
     align-items: center;
-    justify-content: center;
+    justify-items: center;
   }
 
   .btn-menu {
-    background-color: rgba(255, 255, 255, 0.165);
     padding: 5px;
     position: absolute;
     border-radius: 50px;
