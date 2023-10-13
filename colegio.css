@@ -251,7 +251,7 @@ z-index: 100;
 
 
 #port-text {
-  height: 97vh;
+  height: 100vh;
   position:absolute;
   background-color: rgba(21, 18, 18, 0.604);
   color: rgb(250, 239, 223);
@@ -680,7 +680,7 @@ aside {
   gap: 45px;
   font-size: 5rem;
   color: whitesmoke;
-  padding: 40px 200px;
+  padding: 30px 200px;
   background-color: rgb(37, 101, 104);
 }
 
@@ -724,9 +724,13 @@ footer {
 }
 .negrita {
   font-size: var(--letra-small);
-  text-decoration: none;
-  font-weight: 300;
+  color: white;
+  font-weight: 600;
 
+}
+.negrita:active{
+  color: white;
+  text-decoration: none;
 }
 #men {
   display: none;
@@ -794,11 +798,11 @@ footer {
   }
 
   #port-text {
+    height: 100%;
     text-align: center;
     font-weight: 100;
     overflow:hidden;
     width: 100%;
-    margin: 20px auto ;
     padding: 0 30px;
     background-color: rgba(0, 0, 0, 0.567);
   }
