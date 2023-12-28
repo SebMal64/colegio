@@ -99,7 +99,6 @@ a:link, a:visited, a:active {
   flex-direction: row;
   width: 61%;
   list-style: none;
-  background-color: red;
 }
 
 .word {
@@ -760,12 +759,19 @@ padding: 0px 28px 30px;
     height: 3px;
   }
   #portada {
+  
     width: 100%;
     background-blend-mode: overlay;
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
   }
+  #slider {
+     width: 100vw;
+  display: grid; 
+  animation: none;
+  }
+
  
   #logo {
     display: flex;
