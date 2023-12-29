@@ -62,11 +62,13 @@ function Primaria(nivel) { nivel("edu-ini", title_prim, "text-ini", text_prim, i
 }
 
  function leer (textoNull, botonNum) {
+    let btn = document.getElementById(botonNum);
     
         
         if (document.getElementById(botonNum).innerHTML==`&nbsp;&nbsp;Leer más...`) {
             document.getElementById(textoNull).style.display="inline";
             document.getElementById(botonNum).innerHTML=`Leer menos...`;
+            
 
         }
         else {

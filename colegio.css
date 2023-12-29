@@ -11,6 +11,7 @@ body {
     overflow-x: hidden;
 
 }
+
 :root {
   --fondo-color: rgba(228, 227, 239, 0.9);
   --fondo-red: rgb(230, 116, 64);
