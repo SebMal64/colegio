@@ -61,32 +61,52 @@ function Primaria(nivel) { nivel("edu-ini", title_prim, "text-ini", text_prim, i
  }
 }
 
- function leer (textoNull, botonNum) {
+
+
+function leer (textoNull, botonNum) {
+
     let btn = document.getElementById(botonNum);
-    
-        
-        if (document.getElementById(botonNum).innerHTML==`&nbsp;&nbsp;Leer más...`) {
-            document.getElementById(textoNull).style.display="inline";
-            document.getElementById(botonNum).innerHTML=`Leer menos...`;
-            
+    btn.innerHTML='Leer menos';   
+
+    let text = document.getElementById(textoNull);
+
+    if(btn.innerHTML!=="Leer más"){
+
+text.classList.toggle('show');
+    btn.innerHTML='Leer mas';   
+     text.classList.toggle('hide');
+
+    } 
+
+}
+
+    function uno() {
+        leer("hide1", "read1")
+  
+};/* if (text.classList.contains('hide')) {
+        btn.innerHTML='...Leer menos';
+        text.classList.toggle('show');
 
         }
         else {
-            document.getElementById(textoNull).style.display="none";
-        document.getElementById(botonNum).innerHTML=`&nbsp;&nbsp;Leer más...`;
-        }
-
- }
-  
-    function uno(leer) {
-        leer("hide1", "read1")
-    };
+            btn.innerHTML='Leer más...';
+        text.classList.toggle('show')  */  
     function dos(leer) {
-        leer("hide2", "read2")
+       leer("hide2", "read2")
     };
     function tres(leer) {
         leer("hide3", "read3")
     };
+/*
+-------------
+    text.classList.toggle('show');
+        if (text.classList.contains('show')) {
+            btn.innerHTML='...Leer menos';
+            text.style.display="inline";
+
+ }*/
+  
+
 
 function barraScroll () {
     //referencia al id

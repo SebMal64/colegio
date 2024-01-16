@@ -420,10 +420,12 @@ z-index: 4;
   line-height: 1.5rem;
   color: var(--color-letra);
 }
-#hide3,
-#hide2,
-#hide1 {
+
+.hide {
   display: none;
+}
+.show {
+  display: inline;
 }
 #read3,
 #read2,
